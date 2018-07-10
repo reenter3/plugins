@@ -31,6 +31,7 @@ public class Eggcode implements Listener {
 			if(player.getFoodLevel() > 1) {
 				
 				player.setFoodLevel(player.getFoodLevel() - 1);
+				event.getPlayer().getInventory().addItem(new ItemStack(Material.MONSTER_EGG,1, (short) 91));
 				
 			}else{
 				if(player.getFoodLevel() <= 1 );
