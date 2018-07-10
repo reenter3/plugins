@@ -1,0 +1,3 @@
+name: automsg
+version: 1.0
+main: eggmain.Main
