@@ -16,12 +16,13 @@ import org.bukkit.event.player.PlayerInteractEntityEvent;
 public class Eggcode implements Listener {
 	
 	
-	
+	EntityType Sheep = EntityType.SHEEP;
 	
 	@EventHandler
 	public void onInteract(PlayerInteractEntityEvent event) {
 		
 		Player player = event.getPlayer();
+		ItemStack SheepEgg = new ItemStack(Material.MONSTER_EGG, 1 , (short) 91);
 		
 		
 		if(event.getRightClicked() instanceof Sheep) {
@@ -29,9 +30,11 @@ public class Eggcode implements Listener {
 			player.getFoodLevel();
 			
 			if(player.getFoodLevel() > 1) {
-				
+				event.getPlayer().getInventory().addItem(SheepEgg);
 				player.setFoodLevel(player.getFoodLevel() - 1);
-				event.getPlayer().getInventory().addItem(new ItemStack(Material.MONSTER_EGG,1, (short) 91));
+				
+				
+				
 				
 			}else{
 				if(player.getFoodLevel() <= 1 );
@@ -39,21 +42,6 @@ public class Eggcode implements Listener {
 			
 				
 		}
-		
-		
-	    
-			
-				
-			
-			
-			
-			
-			}
-			
-		}
-	
-	
-}
 	
 
 
