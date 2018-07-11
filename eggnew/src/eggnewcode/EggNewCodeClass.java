@@ -27,7 +27,7 @@ public class EggNewCodeClass implements Listener {
 	ItemStack SquidEgg = new ItemStack(Material.MONSTER_EGG, 1, (short) 94);
 	ItemStack VillagerEgg = new ItemStack(Material.MONSTER_EGG, 1, (short) 120);
 
-	//A 'Magic Wand'
+	//Stick
 	ItemStack Stick = new ItemStack(Material.STICK);
 
 	//Mob Types
@@ -52,78 +52,78 @@ public class EggNewCodeClass implements Listener {
 		
 		if (player.getInventory().getItemInMainHand().equals(Stick)){
 			if(player.getFoodLevel() > 1) {
-				if (entity.getType().equals(Sheep)){
+		if (entity.getType().equals(Sheep)){
                     entity.remove();
                     player.getInventory().addItem(SheepEgg);
                     player.setFoodLevel(player.getFoodLevel() - 2);
-                    player.sendMessage(ChatColor.AQUA + "The sheep has been eggified.");
+                    player.sendMessage(ChatColor.AQUA + "The sheep has been egged.");
                 }
-				if (entity.getType().equals(Bat)){
+		if (entity.getType().equals(Bat)){
                     entity.remove();
                     player.getInventory().addItem(BatEgg);
-                    player.setFoodLevel(player.getFoodLevel() - 1);
-                    player.sendMessage(ChatColor.AQUA + "The bat has been eggified.");
+                    player.setFoodLevel(player.getFoodLevel() - 2);
+                    player.sendMessage(ChatColor.AQUA + "The bat has been egged.");
                 }
                 if (entity.getType().equals(Bunny)){
                     entity.remove();
                     player.getInventory().addItem(BunnyEgg);
-                    player.setFoodLevel(player.getFoodLevel() - 1);
-                    player.sendMessage(ChatColor.AQUA + "The bunny has been eggified.");
+                    player.setFoodLevel(player.getFoodLevel() - 2);
+                    player.sendMessage(ChatColor.AQUA + "The bunny has been egged.");
                 }
                 if (entity.getType().equals(Cat)){
                     entity.remove();
                     player.getInventory().addItem(CatEgg);
-                    player.setFoodLevel(player.getFoodLevel() - 1);
-                    player.sendMessage(ChatColor.AQUA + "The cat has been eggified.");
+                    player.setFoodLevel(player.getFoodLevel() - 2);
+                    player.sendMessage(ChatColor.AQUA + "The cat has been egged.");
                 }
                 if (entity.getType().equals(Chicken)){
                     entity.remove();
                     player.getInventory().addItem(ChickenEgg);
-                    player.setFoodLevel(player.getFoodLevel() - 1);
-                    player.sendMessage(ChatColor.AQUA + "The chicken has been eggified.");
+                    player.setFoodLevel(player.getFoodLevel() - 2);
+                    player.sendMessage(ChatColor.AQUA + "The chicken has been egged.");
                 }
                 if (entity.getType().equals(Cow)){
                     entity.remove();
                     player.getInventory().addItem(CowEgg);
-                    player.setFoodLevel(player.getFoodLevel() - 1);
-                    player.sendMessage(ChatColor.AQUA + "The cow has been eggified.");
+                    player.setFoodLevel(player.getFoodLevel() - 2);
+                    player.sendMessage(ChatColor.AQUA + "The cow has been egged.");
                 }
                 if (entity.getType().equals(Dog)){
                     entity.remove();
                     player.getInventory().addItem(DogEgg);
-                    player.setFoodLevel(player.getFoodLevel() - 1);
-                    player.sendMessage(ChatColor.AQUA + "The dog has been eggified.");
+                    player.setFoodLevel(player.getFoodLevel() - 2);
+                    player.sendMessage(ChatColor.AQUA + "The dog has been egged.");
                 }
                 if (entity.getType().equals(Horse)){
                     entity.remove();
                     player.getInventory().addItem(HorseEgg);
-                    player.setFoodLevel(player.getFoodLevel() - 1);
-                    player.sendMessage(ChatColor.AQUA + "The horse has been eggified.");
+                    player.setFoodLevel(player.getFoodLevel() - 2);
+                    player.sendMessage(ChatColor.AQUA + "The horse has been egged.");
                 }
                 if (entity.getType().equals(Mooshroom)){
                     entity.remove();
                     player.getInventory().addItem(MooshroomEgg);
-                    player.setFoodLevel(player.getFoodLevel() - 1);
-                    player.sendMessage(ChatColor.AQUA + "The mooshroom has been eggified.");
+                    player.setFoodLevel(player.getFoodLevel() - 2);
+                    player.sendMessage(ChatColor.AQUA + "The mooshroom has been egged.");
                 }
                 if (entity.getType().equals(Pig)){
                     entity.remove();
                     player.getInventory().addItem(PigEgg);
-                    player.setFoodLevel(player.getFoodLevel() - 1);
-                    player.sendMessage(ChatColor.AQUA + "The pig has been eggified.");
+                    player.setFoodLevel(player.getFoodLevel() - 2);
+                    player.sendMessage(ChatColor.AQUA + "The pig has been egged.");
               
                 }
                 if (entity.getType().equals(Squid)){
                     entity.remove();
                     player.getInventory().addItem(SquidEgg);
-                    player.setFoodLevel(player.getFoodLevel() - 1);
-                    player.sendMessage(ChatColor.AQUA + "The squid has been eggified.");
+                    player.setFoodLevel(player.getFoodLevel() - 2);
+                    player.sendMessage(ChatColor.AQUA + "The squid has been egged.");
                 }
                 if (entity.getType().equals(Villager)){
                     entity.remove();
                     player.getInventory().addItem(VillagerEgg);
                     player.setFoodLevel(player.getFoodLevel() - 1);
-                    player.sendMessage(ChatColor.AQUA + "The villager has been eggified.");
+                    player.sendMessage(ChatColor.AQUA + "The villager has been egged.");
                 }
 			}else{
 				if(player.getFoodLevel() <= 1 );
